@@ -6,6 +6,7 @@ struct person* create_person(char *newName, int newAge)
 	struct person *person = (struct person*)malloc(sizeof(struct person));
 	person->name = newName;
 	person->age = newAge;
+	person->next = NULL; 
 }
 
 void print_person(struct person* person)
